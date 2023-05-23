@@ -8,6 +8,7 @@ const concatjs = require('gulp-concat');
 const uglify = require('gulp-terser');
 const jsminify = require('gulp-js-minify');
 const imagemin = require('gulp-imagemin');
+const clean = require('gulp-clean');
 
 
 
@@ -57,6 +58,11 @@ function watch() {
     gulp.watch('./src/**/*.*', gulp.parallel(html, css, js, img)).on('all', browsersync.reload)
 }
 
+function clearDist() {
+    return gulp.src('./dist', { allowEmpty: true }).pipe(clean())
+}
+
+
 
 exports.build = gulp.parallel(html, css, js, img);
-exports.watch = gulp.series(this.build, browserServe, watch);
+exports.watch = gulp.series(clearDist, this.build, browserServe, watch);
