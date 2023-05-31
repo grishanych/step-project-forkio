@@ -4,13 +4,13 @@
 @import "./_variables.scss";
 @import "./_media-queries.scss";
 
-
-  @media print {
-    html, body {
-      width: 1380px; /* Устанавливаем максимальную ширину для печати */
-      overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
+@media print {
+    html,
+    body {
+        width: 1380px; /* Устанавливаем максимальную ширину для печати */
+        overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
     }
-  } 
+}
 
 .main-section {
     width: 1380px;
@@ -28,7 +28,7 @@
         &__empty-block {
             height: 460px;
         }
-        
+
         &__navbar {
             max-width: 1200px;
             margin: auto;
@@ -38,18 +38,17 @@
             flex-wrap: nowrap;
         }
 
-
         &__navbar-after-column {
             width: 100%;
             display: flex;
             justify-content: space-between;
-          }
-            &__logo-img{
-                background-image: url(../img/logo.png);
-                width: 43px;
-                height: 41px;
-            }
-   
+        }
+        &__logo-img {
+            background-image: url(../img/logo.png);
+            width: 43px;
+            height: 41px;
+        }
+
         &__logo {
             display: flex;
             align-items: center;
@@ -61,22 +60,21 @@
             text-transform: uppercase;
             gap: 17px;
             text-decoration: none;
-            cursor: pointer;         
+            cursor: pointer;
         }
-        &__logo:hover .header__logo-img{
+        &__logo:hover .header__logo-img {
             display: block;
-            background-image: url(../img/logo-hover.png);   
-            transition: 0.5s;      
+            background-image: url(../img/logo-hover.png);
+            transition: 0.5s;
         }
-        &__logo:hover{
+        &__logo:hover {
             transition: 0.5s;
             color: #fff;
         }
-    
-        &__item-block{
+
+        &__item-block {
             display: flex;
             margin-left: 300px;
-            
         }
 
         &__item {
@@ -84,15 +82,14 @@
             justify-content: space-between;
             align-items: center;
             gap: 48px;
-            
         }
 
-       &__item-block-hidden{
-        display: none;
-       }
+        &__item-block-hidden {
+            display: none;
+        }
 
-        &__list{
-              list-style-type: none;
+        &__list {
+            list-style-type: none;
         }
 
         &__link {
@@ -101,16 +98,15 @@
             @include font-Montserrat;
             font-weight: 700;
             font-size: 16px;
-            line-height: 17px;   
-          
+            line-height: 17px;
         }
 
-        &__link:hover{
+        &__link:hover {
             transition: 0.5s;
             color: #fff;
         }
 
-        .navbar-btn-block{
+        .navbar-btn-block {
             width: auto;
             display: flex;
             align-items: center;
@@ -124,17 +120,15 @@
             background-color: $header-text-color;
             border-radius: 40px;
             color: #fff;
-            
-            
+
             border: 1px solid transparent;
         }
-        .navbar-btn:hover{
+        .navbar-btn:hover {
             background-color: #fff;
             color: $header-text-color;
             transition: 0.5s;
             border: 1px solid $header-text-color;
         }
-
 
         &__title {
             @include font-Montserrat;
@@ -144,7 +138,6 @@
             text-align: center;
             color: #fff;
             margin: 60px 0 0;
-
         }
 
         &__text {
@@ -169,8 +162,6 @@
             color: #848e97;
         }
 
-     
-
         &__btn-download {
             width: 394px;
             margin: 0 auto;
@@ -189,7 +180,7 @@
             text-decoration: none;
         }
 
-        &__btn:hover{
+        &__btn:hover {
             background: #fff;
             border: 2px solid $header-text-color;
             color: $header-text-color;
@@ -210,7 +201,7 @@
         .hamburger {
             display: none;
         }
-        
+
         .bar {
             display: block;
             width: 25px;
@@ -220,25 +211,23 @@
             transition: all 0.3s ease-in-out;
             background-color: #f7f5f5;
         }
-        .bar:first-child{
+        .bar:first-child {
             width: 12px;
             margin-left: 13px;
         }
     }
 }
 
-
-
 // section editor
 
-.editor{
+.editor {
     width: 1200px;
     margin: 0 auto;
     position: relative;
     background: #ffffff;
     padding: 70px 90px;
 
-    &__content{
+    &__content {
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -246,17 +235,16 @@
         justify-content: center;
     }
 
-
-    &__title{
+    &__title {
         font-weight: 700;
         font-size: 54px;
         line-height: 54px;
         text-transform: uppercase;
-        color: #635C73;
+        color: #635c73;
         margin: 19px 0;
     }
 
-    &__text{
+    &__text {
         font-weight: 400;
         font-size: 21px;
         line-height: 32px;
@@ -266,25 +254,24 @@
         margin: 15px 0;
     }
 
-    &__github{
+    &__github {
         display: flex;
         width: 400px;
         justify-content: space-between;
     }
 }
 
-
-.github{
-    &-button{
-    display: flex;
-    color: grey;
-    border: 1px solid #45444b;
-    border-radius: 2px;
-    vertical-align: middle;
-    font-weight: 400;
+.github {
+    &-button {
+        display: flex;
+        color: grey;
+        border: 1px solid #45444b;
+        border-radius: 2px;
+        vertical-align: middle;
+        font-weight: 400;
     }
 
-    &-btn{
+    &-btn {
         border-right: 1px solid #45444b;
         font-weight: 400px;
         font-size: 16px;
@@ -296,7 +283,7 @@
         color: #333238;
     }
 
-    &-link{
+    &-link {
         color: #333238;
         padding: 0 6px;
     }
@@ -307,42 +294,85 @@
 //start section about-fork
 
 .about-fork {
-    background-image: url(../img/about-fork-bg.png);
-    height: 769px;
+    background-image: url(../img/about_fork/about-fork-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 1px solid forestgreen;
-    margin-bottom: 66px;
+    padding-bottom: 29px;
+
+    &__title-text {
+        @include font-Montserrat;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 50px;
+        text-align: center;
+        color: #ffffff;
+        padding-top: 108px;
+    }
+
+    &__content {
+        margin: 80px 80px 118px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 111px;
+    }
+
+    &__content-info {
+        width: 315px;
+        height: 142px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__content-text {
+        font-family: "Lato";
+        font-style: italic;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__footer-text {
+        width: 880px;
+        margin: 0 auto 18px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #a291a5;
+    }
+
+    &__footer-line {
+        // margin-bottom: 29px;
+        border: 2px solid #645766;
+        width: 780px;
+    }
 }
 
 //end section about-fork
 
-.about-fork__title-text{
-    @include font-Montserrat;
-font-weight: 700;
-font-size: 48px;
-line-height: 50px;
-text-align: center;
-color: #FFFFFF;
-margin-top: 108px;
-}
-
 // start section features
 
-.features{
+.features {
     display: grid;
-    grid-template-columns:  0.5fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
     width: 1380px;
     margin: 0 auto;
-    background: #F4F4F4;
+    background: #f4f4f4;
 
-
-    &__left{
+    &__left {
         padding: 100px 50px 70px 100px;
     }
 
-    &-item{
+    &-item {
         display: flex;
         align-items: start;
         justify-content: space-between;
@@ -351,15 +381,15 @@ margin-top: 108px;
         margin-bottom: 30px;
     }
 
-    &-item-img{
+    &-item-img {
         object-fit: contain;
     }
 
-    &-item-content{
+    &-item-content {
         max-width: 405px;
     }
 
-    &-item-title{
+    &-item-title {
         font-weight: 400;
         font-size: 16px;
         line-height: 21px;
@@ -367,29 +397,27 @@ margin-top: 108px;
         margin-bottom: 17px;
     }
 
-    &-item-text{
+    &-item-text {
         font-weight: 400;
         font-size: 14px;
         line-height: 21px;
-        color: #848E97;
-        font-family: 'Montserrat', sans-serif;
+        color: #848e97;
+        font-family: "Montserrat", sans-serif;
     }
 
-    &__right{
+    &__right {
         padding-top: 95px;
     }
 
-    &__title{
+    &__title {
         font-weight: 700;
         font-size: 48px;
         line-height: 50px;
-        color: #8D81AC;
+        color: #8d81ac;
         margin-bottom: 20px;
     }
 }
 
-
-@media(max-width: 993px){
-    
+@media (max-width: 993px) {
 }
 // end section features
