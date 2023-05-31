@@ -12,7 +12,7 @@
     }
   } 
 
-.main {
+.main-section {
     width: 1380px;
     margin: auto;
     padding: 0 10px;
@@ -23,6 +23,11 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        margin-bottom: 66px;
+
+        &__empty-block {
+            height: 460px;
+        }
         
         &__navbar {
             max-width: 1200px;
@@ -31,7 +36,6 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: nowrap;
-            // border: 1px solid red;
         }
 
 
@@ -121,6 +125,7 @@
             border-radius: 40px;
             color: #fff;
             
+            
             border: 1px solid transparent;
         }
         .navbar-btn:hover{
@@ -164,9 +169,7 @@
             color: #848e97;
         }
 
-        &__empty-block {
-            height: 460px;
-        }
+     
 
         &__btn-download {
             width: 394px;
@@ -235,38 +238,6 @@
     background: #ffffff;
     padding: 70px 90px;
 
-    &__button{
-        position: absolute;
-        top: -35px;
-        left: 495px;
-    }
-  
-
-    &__download{
-        width: 390px;
-        height: 62px;
-        background: #8D81AC;
-        border-radius: 40px;
-        color: #ffffff;
-        font-weight: 700;
-        font-size: 21px;
-        line-height: 22px;
-    }
-  &__download:hover{
-        background: #FFFFFF;
-        border: 2px solid #8D81AC;
-        color: #8D81AC;
-    }
-
-    &__button-info{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 15px;
-        text-align: center;
-        color: #848E97;
-        margin: 19px 0;
-    }
-
     &__content{
         margin: auto;
         display: flex;
@@ -333,6 +304,29 @@
 
 // end section editor
 
+//start section about-fork
+
+.about-fork {
+    background-image: url(../img/about-fork-bg.png);
+    height: 769px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid forestgreen;
+    margin-bottom: 66px;
+}
+
+//end section about-fork
+
+.about-fork__title-text{
+    @include font-Montserrat;
+font-weight: 700;
+font-size: 48px;
+line-height: 50px;
+text-align: center;
+color: #FFFFFF;
+margin-top: 108px;
+}
 
 // start section features
 
