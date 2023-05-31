@@ -5,6 +5,13 @@
 @import "./_media-queries.scss";
 
 
+  @media print {
+    html, body {
+      width: 1380px; /* Устанавливаем максимальную ширину для печати */
+      overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
+    }
+  } 
+
 .main {
     width: 1380px;
     margin: auto;
@@ -226,14 +233,13 @@
     margin: 0 auto;
     position: relative;
     background: #ffffff;
-    padding-bottom: 70px;
+    padding: 70px 90px;
 
     &__button{
         position: absolute;
-        top: -130px;
-        left: 405px;
+        top: -35px;
+        left: 495px;
     }
-
   
 
     &__download{
@@ -333,13 +339,13 @@
 .features{
     display: grid;
     grid-template-columns:  0.5fr 1fr;
-    width: 1200px;
+    width: 1380px;
     margin: 0 auto;
     background: #F4F4F4;
 
 
     &__left{
-        padding: 100px 40px 70px 40px;
+        padding: 100px 50px 70px 100px;
     }
 
     &-item{
