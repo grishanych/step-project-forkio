@@ -17,3 +17,9 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+
+
+
+//  download a webpage in PDF format
+
