@@ -57,6 +57,38 @@
   .main-section > .header > .header__btn-download{
     margin-top: 15px;
   }
+
+
+  //about-fork
+  .about-fork {
+    max-width: 768px;
+    // max-height: 900px;
+    margin: auto;
+    padding: 0;
+  }
+
+  .about-fork > .about-fork__content {
+    margin: 80px 3px 118px;
+  }
+  .about-fork > .about-fork__title-text {
+    font-size: 42px;
+    line-height: 44px;
+    padding-top: 85px;
+  }
+
+  .about-fork > .about-fork__footer-text{
+    width: 704px;
+    font-size: 14px;
+    line-height: 21px;
+    
+  }
+
+  .about-fork > .about-fork__footer-line{
+    width: 555px;
+  }
+
+
+  
 }
 
 
@@ -151,7 +183,6 @@
     @include font-Montserrat;
     font-weight: 400;
     font-size: 26px;
-    // line-height: 26px;
     height: 53px;
     width: 290px;
     display: flex;
@@ -216,5 +247,31 @@
   .header__empty-block {
     max-height: 325px;
     margin-top: 27px;
+  }
+
+  .about-fork > .about-fork__content {
+    margin: 53px 25px 45px;
+    gap: 45px;
+  }
+
+  .about-fork > .about-fork__content >.about-fork__content-info {
+    width: 270px;
+    height: 160px;
+}
+
+  .about-fork > .about-fork__title-text {
+    font-size: 38px;
+    line-height: 48px;
+    padding-top: 57px;
+  }
+
+  .about-fork > .about-fork__footer-text{
+    width: 251px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .about-fork > .about-fork__footer-line{
+    width: 245px;
   }
 }
