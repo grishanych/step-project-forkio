@@ -5,6 +5,7 @@
 @import "./_media-queries.scss";
 
 
+
   @media print {
     html, body {
       width: 1380px; /* Устанавливаем максимальную ширину для печати */
@@ -16,7 +17,7 @@
     width: 1380px;
     margin: auto;
     padding: 0 10px;
-
+    
     .header {
         background-image: url(../img/header-bg.png);
         height: 800px;
@@ -333,19 +334,24 @@
 
 // end section editor
 
+// ==============================
+
 
 // start section features
 
 .features{
-    display: grid;
-    grid-template-columns:  0.5fr 1fr;
-    width: 1380px;
+    display: flex;
+    max-width: 1380px;
     margin: 0 auto;
     background: #F4F4F4;
 
 
     &__left{
         padding: 100px 50px 70px 100px;
+    }
+
+    &__title-hidden{
+        display: none;
     }
 
     &-item{
@@ -395,7 +401,3 @@
 }
 
 
-@media(max-width: 993px){
-    
-}
-// end section features

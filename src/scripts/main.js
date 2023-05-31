@@ -24,15 +24,14 @@
 //  download a webpage in PDF format
 
 document.getElementById('download-btn').addEventListener('click', function() {
-    const element = document.body; // Выбираем элемент, который нужно сохранить как PDF (в данном случае вся страница)
+    const element = document.body; 
     const options = {
-      filename: 'FORKIO.pdf', // Имя файла
-      image: { type: 'jpeg', quality: 0.98 }, // Формат изображения и качество
-      html2canvas: { scale: 2 }, // Масштабирование элементов
-      jsPDF: { unit: 'px', format: 'a4', orientation: 'portrait', compressPDF: true } // Формат и ориентация PDF
+      filename: 'FORKIO.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 1 }, 
+      jsPDF: { unit: 'px', format: 'a4', orientation: 'portrait', compressPDF: true } 
     };
 
-    // Используем html2pdf для создания PDF
     html2pdf().set(options).from(element).save();
   });
 
