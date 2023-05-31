@@ -1,92 +1,145 @@
-# step-project-forkio
+<h1 align="center">Step-project-forkio</h1>
 
 
+---
+- [List of Technologies Used](#List-of-Technologies-Used)
+- [Installation](#installation)
+  - [Required to install](#Required-to-install)
+  - [Clone](#Clone)
+  - [Setup](#Setup)
+  - [How to run local](#How-to-run-local)
+- [Contributing](#contributing)
+  - [git flow](#git-flow)
+  - [issue flow](#git-flow)
+  - [Team](#team)
+  - [Tasks Completed by Each Member](#Tasks-Completed-by-Each-Member)
+- [FAQ](#faq)
 
-## Getting started
+---
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## List of Technologies Used
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.com/grishanych/step-project-forkio.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.com/grishanych/step-project-forkio/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+- node.js
+- npm
+- gulp
+- scss
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+- All the `code` required to get started
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+### Required to install
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+- NodeJS (LTS)
+
+### Clone
+
+- Clone this repo to your local machine using `https://gitlab.com/grishanych/step-project-forkio.git`
+
+### Setup
+
+> install gulp Command Line Interface (gulp-cli is a utility program that lets you access gulp from your shell)
+```shell
+$ npm install --global gulp-cli
+```
+
+> install npm packages
+```shell
+$ npm install
+```
+
+### How to run local
+
+1. Open terminal.
+2. Run `npm i` to install all required packages.
+4. Run `npm watch` to run project.
+5. Open http://localhost:3000 to view it in the browser.
 
 ## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+---
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+Before sending any pull request, please discuss requirements/changes to be implemented using an existing issue or by creating a new one. All pull requests should be done into `main` branch.
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
 
-## License
-For open source projects, say how it is licensed.
+---
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+### Git flow
+
+We have **main** and **others** branches.  
+All **feature** branches must be merged into [main] (https://gitlab.com/grishanych/step-project-forkio.git) branch!!!
+
+
+#### Step 1
+
+- **Option 1**
+
+  - 👯 Clone this repo to your local machine using `https://gitlab.com/grishanych/step-project-forkio.git`
+
+- **Option 2**
+
+  - create new branch from development branch
+
+  #### Step 2
+
+- add some code to your new branch
+
+#### Step 3
+
+- Run git add . in the terminal. This will track any changes made to the folder on your system, since the last commit. As this is the first time you are committing the contents of the folder, it will add everything
+
+#### Step 4
+
+- Run git commit -m"insert Message here". This will prepare the added/tracked changes to the folder on your system for pushing to Github. Here, insert Message here can be replaced with any relevant commit message of your choice.
+
+#### Step 5
+
+- Run git push origin “branch_name”. Note that the last word in the command “branch_name”, is not a fixed entry when running git push. It can be replaced with any relevant “branch_name”.
+
+#### Step 6
+
+- 🔃 Create a new pull request.
+
+
+
+---
+
+### Issue flow
+
+#### Step 1
+
+-go to [!issues](https://gitlab.com/grishanych/step-project-forkio/-/issues) and click `New issue` button
+
+#### Step 2
+
+when creating [issue](https://gitlab.com/grishanych/step-project-forkio/-/issues/new) you should add name of the issue, description, choose assignee, label, project. If issue is a `User Story` you should link it with corresponding tasks, and corresponding tasks should be linked to issue.
+
+#### Step 3
+
+if issue is in work it should be placed in proper column on dashboard according to its status.
+
+---
+
+## Team
+
+### Development team
+[![@grishanych](https://gitlab.com/uploads/-/system/user/avatar/13362400/avatar.png?width=400)](https://gitlab.com/grishanych)
+
+[![@savenko0097](https://gitlab.com/savenko0097)](https://gitlab.com/savenko0097)
+
+## Tasks Completed by Each Member
+
+1. Grygorii Nych:
+   - Create the site HEADER with the top menu (including the drop-down menu at low screen resolution).
+   - Create section "People Are Talking About Fork".
+
+2. Anastasiia Savenko:
+   - Create block "Revolutionary Editor".
+   - Create section "Here is what you get".
+   - Create section "Fork Subscription Pricing".
+
+
+## FAQ
+
+- **How do I do _specifically_ so and so?**
+  - No problem! Just do this.
