@@ -210,39 +210,59 @@
 
 
 
-// section editor and features
+
+// 768px; section: editor and features 
 
 
 @media screen and (min-width: 481px) and (max-width: 992px){
-    
+    .main{
+      max-width: 780px;
+      margin: auto;
+    }
   .main > .editor{
     max-width: 768px;
+    margin: auto;
+    padding: 90px 0;
+}
 
-    &__title{
-      font-weight: 700;
+.main > .editor__content{
+  max-width: 690px;
+  margin: 80px 40px;
+}
+    .main >  .editor > .editor__content > .editor__title{
       font-size: 42px;
       line-height: 42px;
   }
 
+  .main >  .editor > .editor__content > .editor__text{
+    font-size: 21px;
+    line-height: 32px;
+    width: 690px;
+    margin-top: 25px;
 }
+
 
 .main > .features{
   display: block;
   background: #fff;
   max-width: 768px;
   margin: auto;
-  padding: 0;
+  padding: 62px 0 10px 0;
+}
 
-  &__title-hidden{
+  .main > .features > .features__title-hidden{
     display: block;
     margin-bottom: 52px;
+    text-align: center;
   }
 
-  &__title{
-    display: none;
-  }
+  .main > .features > .features__left {
+    padding: 0;
+    margin: 50px 30px;
 
-  &-item{
+    }
+
+  .main > .features > .features__left > .features__list > .features-item{
       display: flex;
       align-items: start;
       justify-content: space-between;
@@ -251,14 +271,133 @@
       margin-bottom: 55px;
   }
 
-  &-item-img{
-      object-fit: contain;
-  }
-
-  &-item-content{
+  .main > .features > .features__left > .features__list > .features-item > .features-item-content{
       max-width: 580px;
   }
+
+  .main > .features > .features__right > .features__title{
+    display: none;
+  }
+
+  .main > .features > .features__right {
+    padding: 0;
+  }
+
+  .main > .features > .features__right > .features__img {
+    margin: 0 0 0 100px;
+  }
 }
+
+
+
+
+// min 320px; section: editor and features 
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .main {
+    max-width: 340px;
+    margin: auto;
+  }
+
+  .main > .editor{
+    max-width: 320px;
+    margin: auto;
+    padding: 0;
+}
+
+.main > .editor__content {
+    max-width: 320px;
+    margin: auto;
+}    
+
+
+.main >  .editor > .editor__content > .editor__title{
+  font-size: 26px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.main >  .editor > .editor__content > .editor__text{
+font-size: 14px;
+line-height: 20px;
+width: 276px;
+margin-top: 25px;
+}
+
+.main >  .editor > .editor__content > .editor__github{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 280px;
+}
+
+.main >  .editor > .editor__content > .editor__github > .github-button{
+  margin: 20px 3px;
+}
+
+
+// features
+
+.main > .features{
+  display: block;
+  background: #fff;
+  max-width: 320px;
+  margin: auto;
+  padding: 62px 0 10px 0;
+}
+
+.main > .features > .features__right > .features__title{
+  display: none;
+}
+
+.main > .features > .features__title-hidden{
+  display: block;
+  margin: 36px auto;
+  text-align: center;
+  font-size: 32px;
+  line-height: 38px;
+  width: 230px;
+}
+
+.main > .features > .features__left {
+padding: 0;
+margin: 36px 25px;
+}
+
+.main > .features > .features__left > .features__list > .features-item > img{
+ margin-bottom: 27px;
+}
+  .main > .features > .features__left > .features__list > .features-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: space-around;
+  width: 280px;
+  height: auto;
+  margin-bottom: 35px;
+}
+
+.main > .features > .features__left > .features__list > .features-item > .features-item-content{
+  max-width: 280px;
+  text-align: center;
+}
+
+
+.main > .features > .features__right {
+padding: 0;
+}
+
+.main > .features > .features__right > .features__img {
+  width: 317px;
+  height: auto; 
+  margin-left: 0;
+  transform: translateX(33%); 
+  margin-top: 25px;
 }
 
 // end section features
+
+}
+
+
