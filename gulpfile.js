@@ -10,8 +10,7 @@ const uglify = require('gulp-terser');
 const jsminify = require('gulp-js-minify');
 const imagemin = require('gulp-imagemin');
 const clean = require('gulp-clean');
-
-
+// const fileinclude = require('gulp-file-include');
 
 
 function html() {
@@ -63,6 +62,7 @@ function clearDist() {
     return gulp.src('./dist', { allowEmpty: true }).pipe(clean())
 }
 
+// exports.default = fileInclude;
 
 
 exports.build = gulp.parallel(html, css, js, img);
