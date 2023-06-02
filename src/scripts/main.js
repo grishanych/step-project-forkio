@@ -23,18 +23,30 @@ function closeMenu() {
 
 //  download a webpage in PDF format
 
-document.getElementById('download-btn').addEventListener('click', function() {
-    const element = document.body; // Выбираем элемент, который нужно сохранить как PDF (в данном случае вся страница)
-    const options = {
-      filename: 'FORKIO.pdf', // Имя файла
-      image: { type: 'jpeg', quality: 0.98 }, // Формат изображения и качество
-      html2canvas: { scale: 2 }, // Масштабирование элементов
-      jsPDF: { unit: 'px', format: 'a4', orientation: 'portrait', compressPDF: true } // Формат и ориентация PDF
-    };
 
-    // Используем html2pdf для создания PDF
-    html2pdf().set(options).from(element).save();
-  });
+function scale(){
+  document.body.classList.add('scale');
+}
+
+function removeScale(){
+  document.body.classList.remove('scale');
+}
+
+
+const downloadButton = document.getElementById('download-btn');
+
+downloadButton.addEventListener('click', () => {
+  const element = document.documentElement;
+  const options = {
+    filename: 'FORKIO.pdf',
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2 },
+    jsPDF: { format: 'letter' , orientation: 'portrait' },
+    pageWidth: 1400,
+  };
+
+  html2pdf().set(options).from(element).save();
+});
 
 
 

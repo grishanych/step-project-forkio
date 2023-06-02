@@ -125,7 +125,7 @@ if issue is in work it should be placed in proper column on dashboard according 
 ### Development team
 [![@grishanych](https://gitlab.com/uploads/-/system/user/avatar/13362400/avatar.png?width=400)](https://gitlab.com/grishanych)
 
-[![@savenko0097](https://gitlab.com/savenko0097)](https://gitlab.com/savenko0097)
+[![@savenko0097](https://avatars.githubusercontent.com/u/115550388?v=4)](https://gitlab.com/savenko0097)
 
 ## Tasks Completed by Each Member
 
