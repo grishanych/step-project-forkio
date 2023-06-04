@@ -10,12 +10,16 @@ const uglify = require('gulp-terser');
 const jsminify = require('gulp-js-minify');
 const imagemin = require('gulp-imagemin');
 const clean = require('gulp-clean');
-// const fileinclude = require('gulp-file-include');
+const fileinclude = require('gulp-file-include');
 
 
 function html() {
     return gulp.src('src/index.html')
-        .pipe(gulp.dest('./dist'))
+    .pipe(fileinclude({
+        prefix: '@@',
+        basepath: '@file'
+      }))
+    .pipe(gulp.dest('./dist'))
 }
 
 function css() {
@@ -61,6 +65,7 @@ function watch() {
 function clearDist() {
     return gulp.src('./dist', { allowEmpty: true }).pipe(clean())
 }
+
 
 // exports.default = fileInclude;
 

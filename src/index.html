@@ -13,7 +13,16 @@
 
 <body>
     <section class="main-section">
-        <header class="header">
+
+
+        @@include('./html/_header.html')
+        @@include('./html/_editor.html')
+        @@include('./html/_features.html')
+        @@include('./html/_about-fork.html')
+        @@include('./html/_pricing.html')
+       
+
+        <!-- <header class="header">
             <nav class="header__navbar">
                 <div class="header__navbar-after-column">
                     <div class="header__logo-block">
@@ -55,7 +64,7 @@
             </div>
             <div class="header__empty-block"></div>
             <div class="header__btn-download">
-                <a download class="header__btn" id="download-btn">Download For Free Now
+                <a class="header__btn" id="download-btn" href="#">Download For Free Now
                 </a>
                 <p class="header__link-trial" onclick="alert('Thank you!!! You have 30-Days Trial Period!!!')">Unlimited
                     30-Days Trial Period</p>
@@ -96,40 +105,16 @@
         </section>
 
 
-        <section class="about-fork">
-            <h2 class="about-fork__title-text">People Are Talking About Fork</h2>
-            <div class="about-fork__content">
-                <div class="about-fork__content-info">
-                    <img src="./img/about_fork/about_fork-logo-1.png" alt="about_fork-logo-1" class="about-fork__content-logo">
-                    <p class="about-fork__content-text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
-                </div>
-                <div class="about-fork__content-info">
-                    <img src="./img/about_fork/about_fork-logo-2.png" alt="about_fork-logo-2" class="about-fork__content-logo">
-                    <p class="about-fork__content-text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
-                </div>
-                <div class="about-fork__content-info">
-                    <img src="./img/about_fork/about_fork-logo-3.png" alt="about_fork-logo-3" class="about-fork__content-logo">
-                    <p class="about-fork__content-text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </p>
-                </div>
-                <div class="about-fork__content-info">
-                    <img src="./img/about_fork/about_fork-logo-4.png" alt="about_fork-logo-4" class="about-fork__content-logo">
-                    <p class="about-fork__content-text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
-                </div>
-                <div class="about-fork__content-info">
-                    <img src="./img/about_fork/about_fork-logo-5.png" alt="about_fork-logo-5" class="about-fork__content-logo">
-                    <p class="about-fork__content-text">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus.</p>
-                </div>
-                <div class="about-fork__content-info">
-                    <img src="./img/about_fork/about_fork-logo-6.png" alt="about_fork-logo-6" class="about-fork__content-logo">
-                    <p class="about-fork__content-text">Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</p>
-                </div>
-            </div>
-            <p class="about-fork__footer-text"> Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-            <hr class="about-fork__footer-line">
-        </section>
+
 
         <section class="features">
+            <h2 class="features__title features__title-hidden">&lt;Here is what you get&gt;</h2>
+
+            
             <div class="features__left">
+
+                <h2 class="features__title-media">&lt;Here is what you get&gt;</h2>
+
                 <ul class="features__list">
                     <li class="features-item">
                         <img src="./img/icon1-features.svg" alt="icon1-features" width="110" height="64">
@@ -181,8 +166,82 @@
                 <img class="features__img" src="./img/features-right.png" alt="fork-img" width="700" height="520">
             </div>
         </section>
-    </section>
 
+        <section class="about-fork">
+            <h2 class="about-fork__title-text">People Are Talking About Fork</h2>
+            <div class="about-fork__content">
+                <div class="about-fork__content-info">
+                    <img src="./img/about_fork/about_fork-logo-1.png" alt="about_fork-logo-1" class="about-fork__content-logo">
+                    <p class="about-fork__content-text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+                </div>
+                <div class="about-fork__content-info">
+                    <img src="./img/about_fork/about_fork-logo-2.png" alt="about_fork-logo-2" class="about-fork__content-logo">
+                    <p class="about-fork__content-text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
+                </div>
+                <div class="about-fork__content-info">
+                    <img src="./img/about_fork/about_fork-logo-3.png" alt="about_fork-logo-3" class="about-fork__content-logo">
+                    <p class="about-fork__content-text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </p>
+                </div>
+                <div class="about-fork__content-info">
+                    <img src="./img/about_fork/about_fork-logo-4.png" alt="about_fork-logo-4" class="about-fork__content-logo">
+                    <p class="about-fork__content-text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+                </div>
+                <div class="about-fork__content-info">
+                    <img src="./img/about_fork/about_fork-logo-5.png" alt="about_fork-logo-5" class="about-fork__content-logo">
+                    <p class="about-fork__content-text">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus.</p>
+                </div>
+                <div class="about-fork__content-info">
+                    <img src="./img/about_fork/about_fork-logo-6.png" alt="about_fork-logo-6" class="about-fork__content-logo">
+                    <p class="about-fork__content-text">Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</p>
+                </div>
+            </div>
+            <p class="about-fork__footer-text"> Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+            <hr class="about-fork__footer-line">
+        </section>
+
+
+        <section class="pricing">
+            <h2 class="pricing__title">Fork Subscription Pricing</h2>
+            <ul class="pricing__offer">
+                <li class="offer__item">
+                    <h3 class="offer__title">Students</h3>
+                    <h2 class="offer__price">$<b>29</b></h2>
+                    <p class="offer__period">per month</p>
+                    <hr class="offer__line">
+                    <p class="offer__service">Personal License</p>
+                    <button class="offer__purchase">purchase</button>
+                </li>
+
+                <li class="offer__item">
+                    <h3 class="offer__title">professional</h3>
+                    <h2 class="offer__price">$<b>59</b></h2>
+                    <p class="offer__period">per month</p>
+                    <hr class="offer__line">
+                    <p class="offer__service">Professional License <br> Email Support</p>
+                    <button class="offer__purchase">purchase</button>
+                </li>
+
+                <li class="offer__accent">
+                    <h3 class="offer__title">agency</h3>
+                    <h2 class="offer__price">$<b>99</b></h2>
+                    <p class="offer__period">per month</p>
+                    <hr class="offer__line">
+                    <p class="offer__service">1-12 Team Members <br> Phone Support</p>
+                    <button class="offer__purchase">purchase</button>
+                </li>
+
+                <li class="offer__item">
+                    <h3 class="offer__title">enterprise</h3>
+                    <h2 class="offer__price">$<b>159</b></h2>
+                    <p class="offer__period">per month</p>
+                    <hr class="offer__line">
+                    <p class="offer__service">Unlimited Team Members <br> 24/ 7 Phone Support</p>
+                    <button class="offer__purchase">purchase</button>
+                </li> 
+            </ul>
+        </section> -->
+    
+       </section> 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
     <script src="scripts.min.js"></script>

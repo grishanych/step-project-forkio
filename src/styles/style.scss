@@ -4,12 +4,22 @@
 @import "./_variables.scss";
 @import "./_media-queries.scss";
 
-@media print {
-    html,
-    body {
-        width: 1380px; /* Устанавливаем максимальную ширину для печати */
-        overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
-    }
+
+body .scale {
+    max-width: 968px;
+    margin: 0;
+    padding: 0;
+}
+
+.scale .main-section{
+    max-width: 968px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.scale .header__btn{
+    display: none;
 }
 
 .main-section {
@@ -241,7 +251,7 @@
         line-height: 54px;
         text-transform: uppercase;
         color: #635c73;
-        margin: 19px 0;
+        margin: 35px 0;
     }
 
     &__text {
@@ -363,14 +373,17 @@
 // start section features
 
 .features {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    display: flex;
     width: 1380px;
     margin: 0 auto;
     background: #f4f4f4;
 
     &__left {
         padding: 100px 50px 70px 100px;
+    }
+
+    &__title-media{
+        display: none;
     }
 
     &-item {
@@ -403,7 +416,8 @@
         font-size: 14px;
         line-height: 21px;
         color: #848e97;
-        font-family: "Montserrat", sans-serif;
+        @include font-Montserrat;
+
     }
 
     &__right {
@@ -419,6 +433,400 @@
     }
 }
 
-@media (max-width: 993px) {
+// section pricing
+
+.pricing{
+    max-width: 1380px;
+    margin: 0 auto;
+    background-image: url(../img/pricing-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0 30px 0;
+
+
+    &__title{
+        @include font-Montserrat;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 50px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 112px;
+
+    }
+
+    &__offer{
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
-// end section features
+
+.offer{
+    &__item{
+        width: 257px;
+        height: auto;
+        background: #ffffff11;
+        text-align: center;
+        margin: 0 15px 36px 15px;
+        padding-bottom: 36px;
+    }
+
+    &__title{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #ffffff06;
+        padding: 36px 30px;
+    }
+
+    &__price{
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 90px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 30px;
+    }
+
+    &__period{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 20px 0 38px 0;
+    }
+
+    &__line{
+        width: 60px;
+        height: 5px;
+        background: #8D81AC;
+        border-style: none;
+    }
+
+    &__service{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+        margin-top: 46px;
+        height: 44px;
+        @include font-Montserrat;
+    }
+    
+    &__purchase{
+        font-size: 15px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #ffffff15;
+        margin-top: 36px;
+        padding: 13.5px 36px;
+        border-radius: 20px;
+    }
+
+}
+
+.offer__accent{
+        width: 299px;
+        height: 560px;
+        background: #46304884;
+        text-align: center;
+        margin-bottom: 36px;
+}
+
+
+.offer__accent > h3{
+    background: #00000011;
+}
+
+.offer__accent > h2{
+    font-weight: 400;
+    font-size: 82px;
+    line-height: 90px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.offer__accent > button{
+    font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #ffffff15;
+        margin-top: 36px;
+        padding: 18.5px 46px;
+        border-radius: 20px;
+}
+
+
+// media queries 768px
+
+@media screen and (min-width: 481px) and (max-width: 992px) {
+    .main-section {
+      max-width: 788px;
+    }
+
+    //section editor
+    .editor {
+      max-width: 768px;
+      margin: auto;
+      padding: 88px 0;
+
+      &__content {
+        max-width: 768px;
+        margin: auto;
+    }
+
+    &__title {
+        font-size: 42px;
+        line-height: 42px;
+        margin-bottom: 19px;
+    }
+
+    &__text {
+        font-size: 21px;
+        line-height: 32px;
+        width: 690px;
+        margin-bottom: 24px;
+    }
+
+    }
+
+    // section features
+    .features{
+        max-width: 768px;
+        margin: auto;
+        padding: 88px 0;
+        display: block;
+        padding: 66px 0;
+        background: rgba(0, 0, 0, 0.0001)
+    
+        &__left {
+            padding: 62px 35px 0px 30px;
+        }
+
+        &__title-media{
+            display: block;
+            font-size: 42px;
+            line-height: 42px;
+            margin-bottom: 52px;
+            text-align: center;
+            color: #8d81ac;
+            font-weight: 700;
+            line-height: 44px;
+            @include font-Montserrat;
+        }
+    
+        &-item {
+            display: flex;
+            align-items: start;
+            justify-content: space-around;
+            width: 722px;
+        }
+    
+
+        &-item-content {
+            max-width: 580px;
+            margin-left: 24px;
+        }
+    
+        &-item-title {
+            font-size: 16px;
+            line-height: 21px;
+            margin-bottom: 5px;
+        }
+    
+        &-item-text {
+            font-size: 14px;
+            line-height: 21px;
+    
+        }
+    
+        &__right {
+            padding-top: 40px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__title{
+            display: none;
+        }
+        &__img{
+            float: right;
+            width: 700px;
+            height: 520px;
+        }
+    
+    }
+
+    // section pricing
+
+    .pricing{
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 25px 0 94px 0;
+
+        &__title{
+            font-size: 42px;
+            line-height: 44px;
+            margin-bottom: 40px;
+    
+        }
+    
+        &__offer{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+
+// media queries 320px
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .main-section {
+      max-width: 340px;
+    }
+
+        //section editor
+        .editor {
+            max-width: 320px;
+            margin: auto;
+            padding: 44px 0;
+      
+            &__content {
+              max-width: 320px;
+              margin: 0 auto;
+          }
+      
+          &__title {
+            font-size: 26px;
+            line-height: 28px;
+            margin-bottom: 27px;
+            text-align: center;
+          }
+      
+          &__text {
+              font-size: 14px;
+              line-height: 20px;
+              width: 276px;
+              margin-bottom: 36px;
+          }
+
+          &__github{
+            width: 290px;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+
+          }
+
+          .github-button{
+            margin: 20px 5px;
+        }
+
+          
+      
+          // section features
+          .features{
+              max-width: 320px;
+              margin: auto;
+              padding: 32px 0;
+              display: block;
+              background: rgba(0, 0, 0, 0.0001);
+              padding-top: 88px;
+          
+              &__left {
+                  padding: 0 25px;
+              }
+      
+              &__title-media{
+                  display: block;
+                  font-size: 32px;
+                  line-height: 38px;
+                  text-align: center;
+                  color: #8d81ac;
+                  font-weight: 700;
+                  line-height: 44px;
+                  @include font-Montserrat;
+              }
+          
+              &-item {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: space-around;
+                  width: 270px;
+                  height: auto;
+                  margin-top: 37px;
+              }
+          
+      
+              &-item-content {
+                  max-width: 270px;
+                  margin-top: 20px;
+              }
+          
+              &-item-title {
+                  font-size: 16px;
+                  line-height: 16px;
+                  margin-bottom: 14px;
+              }
+          
+              &-item-text {
+                  font-size: 14px;
+                  line-height: 21px;
+                  text-align: center;
+              }
+          
+              &__right {
+                width: 320px;
+                height: 100%; 
+                overflow: hidden;
+                position: relative;
+              }
+      
+              &__title{
+                  display: none;
+              }
+              &__img{
+                max-width: 440px;
+                height: 380px;
+                padding-left: 10px;
+              }
+          
+          }
+      
+          // section pricing
+      
+          .pricing{
+              max-width: 320px;
+              margin: 0 auto;
+              padding: 2px 0 4px 0;
+      
+              &__title{
+                font-size: 28px;
+                line-height: 42px;
+              }
+          
+              &__offer{
+                  display: flex;
+                  flex-wrap: wrap;
+                  margin: 0 auto;
+                  align-items: center;
+                  justify-content: center;
+              }
+          }
+
+}
