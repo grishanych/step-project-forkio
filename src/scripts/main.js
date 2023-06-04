@@ -1,3 +1,5 @@
+'use strict'
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".header__item-block-hidden");
 
@@ -23,16 +25,6 @@ function closeMenu() {
 
 //  download a webpage in PDF format
 
-
-function scale(){
-  document.body.classList.add('scale');
-}
-
-function removeScale(){
-  document.body.classList.remove('scale');
-}
-
-
 const downloadButton = document.getElementById('download-btn');
 
 downloadButton.addEventListener('click', () => {
@@ -40,15 +32,11 @@ downloadButton.addEventListener('click', () => {
   const options = {
     filename: 'FORKIO.pdf',
     image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 2 },
-    jsPDF: { format: 'letter' , orientation: 'portrait' },
+    html2canvas: { scale: 3 },
+    jsPDF: { format: 'a2' , orientation: 'portrait' },
     pageWidth: 1400,
   };
 
   html2pdf().set(options).from(element).save();
+  
 });
-
-
-
-
-
