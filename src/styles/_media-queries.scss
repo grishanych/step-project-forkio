@@ -62,13 +62,13 @@
   //about-fork
   .about-fork {
     max-width: 768px;
-    // max-height: 900px;
     margin: auto;
     padding: 0;
   }
 
   .about-fork > .about-fork__content {
     margin: 80px 3px 118px;
+    // border: 1px solid red;
   }
   .about-fork > .about-fork__title-text {
     font-size: 42px;
@@ -85,6 +85,7 @@
 
   .about-fork > .about-fork__footer-line{
     width: 555px;
+    // padding-bottom: 50px;
   }
 
 
@@ -97,7 +98,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .main-section {
-    max-width: 340px;
+    max-width: 320px;
   }
   .header {
     max-width: 320px;
@@ -273,6 +274,7 @@
 
   .about-fork > .about-fork__footer-line{
     width: 245px;
+
   }
 }
 

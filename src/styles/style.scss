@@ -351,6 +351,7 @@ body .scale {
     &__footer-text {
         width: 880px;
         margin: 0 auto 18px;
+        // margin: 0 auto;
         font-family: "Lato";
         font-style: normal;
         font-weight: 400;
@@ -696,7 +697,7 @@ body .scale {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .main-section {
-      max-width: 340px;
+      max-width: 320px;
     }
 
         //section editor
