@@ -4,17 +4,18 @@
 @import "./_variables.scss";
 @import "./_media-queries.scss";
 
-body .scale {
-    max-width: 968px;
+
+.scale{
+    transform: scale(0.5);
     margin: 0;
     padding: 0;
 }
 
-.scale .main-section {
-    max-width: 968px;
-    margin: 0;
-    padding: 0;
-}
+// .scale .main-section {
+//     max-width: 968px;
+//     margin: 0;
+//     padding: 0;
+// }
 
 .scale .header__btn {
     display: none;
@@ -286,7 +287,7 @@ body .scale {
         display: block;
         justify-content: space-between;
         align-items: center;
-        background: #a7a4a4;
+        background: rgb(166, 169, 171);
         color: #333238;
     }
 
@@ -337,7 +338,7 @@ body .scale {
     }
 
     &__content-text {
-        font-family: "Lato";
+        @include font-Lato;
         font-style: italic;
         font-weight: 700;
         font-size: 16px;
@@ -349,7 +350,7 @@ body .scale {
     &__footer-text {
         width: 880px;
         margin: 0 auto 18px;
-        font-family: "Lato";
+        @include font-Lato;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -426,6 +427,7 @@ body .scale {
         color: #8d81ac;
         margin-bottom: 20px;
     }
+ 
 }
 
 // section pricing
@@ -555,252 +557,3 @@ body .scale {
     border-radius: 20px;
 }
 
-// media queries 768px
-
-@media screen and (min-width: 481px) and (max-width: 992px) {
-    .main-section {
-        max-width: 788px;
-    }
-
-    //section editor
-    .editor {
-        max-width: 768px;
-        margin: auto;
-        padding: 88px 0;
-
-        &__content {
-            max-width: 768px;
-            margin: auto;
-        }
-
-        &__title {
-            font-size: 42px;
-            line-height: 42px;
-            margin-bottom: 19px;
-        }
-
-        &__text {
-            font-size: 21px;
-            line-height: 32px;
-            width: 690px;
-            margin-bottom: 24px;
-        }
-    }
-
-    // section features
-    .features {
-        max-width: 768px;
-        margin: auto;
-        padding: 88px 0;
-        display: block;
-        padding: 66px 0;
-        background: rgba(0, 0, 0, 0.0001) &__left {
-            padding: 62px 35px 0px 30px;
-        }
-
-        &__title-media {
-            display: block;
-            font-size: 42px;
-            line-height: 42px;
-            margin-bottom: 52px;
-            text-align: center;
-            color: #8d81ac;
-            font-weight: 700;
-            line-height: 44px;
-            @include font-Montserrat;
-        }
-
-        &-item {
-            display: flex;
-            align-items: start;
-            justify-content: space-around;
-            width: 722px;
-        }
-
-        &-item-content {
-            max-width: 580px;
-            margin-left: 24px;
-        }
-
-        &-item-title {
-            font-size: 16px;
-            line-height: 21px;
-            margin-bottom: 5px;
-        }
-
-        &-item-text {
-            font-size: 14px;
-            line-height: 21px;
-        }
-
-        &__right {
-            padding-top: 40px;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        &__title {
-            display: none;
-        }
-        &__img {
-            float: right;
-            width: 700px;
-            height: 520px;
-        }
-    }
-
-    // section pricing
-
-    .pricing {
-        max-width: 768px;
-        margin: 0 auto;
-        padding: 25px 0 94px 0;
-
-        &__title {
-            font-size: 42px;
-            line-height: 44px;
-            margin-bottom: 40px;
-        }
-
-        &__offer {
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0 auto;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-}
-
-// media queries 320px
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .main-section {
-        max-width: 320px;
-    }
-
-    //section editor
-    .editor {
-        max-width: 320px;
-        margin: auto;
-        padding: 44px 0;
-
-        &__content {
-            max-width: 320px;
-            margin: 0 auto;
-        }
-
-        &__title {
-            font-size: 26px;
-            line-height: 28px;
-            margin-bottom: 27px;
-            text-align: center;
-        }
-
-        &__text {
-            font-size: 14px;
-            line-height: 20px;
-            width: 276px;
-            margin-bottom: 36px;
-        }
-
-        &__github {
-            width: 290px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    }
-
-    .github-button {
-        margin: 20px 5px;
-    }
-
-    // section features
-    .features {
-        max-width: 320px;
-        margin: auto;
-        padding: 32px 0;
-        display: block;
-        background: rgba(0, 0, 0, 0.0001);
-        padding-top: 88px;
-
-        &__left {
-            padding: 0 25px;
-        }
-
-        &__title-media {
-            display: block;
-            font-size: 32px;
-            line-height: 38px;
-            text-align: center;
-            color: #8d81ac;
-            font-weight: 700;
-            line-height: 44px;
-            @include font-Montserrat;
-        }
-
-        &-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            width: 270px;
-            height: auto;
-            margin-top: 37px;
-        }
-
-        &-item-content {
-            max-width: 270px;
-            margin-top: 20px;
-        }
-
-        &-item-title {
-            font-size: 16px;
-            line-height: 16px;
-            margin-bottom: 14px;
-        }
-
-        &-item-text {
-            font-size: 14px;
-            line-height: 21px;
-            text-align: center;
-        }
-
-        &__right {
-            width: 320px;
-            height: 100%;
-            overflow: hidden;
-            position: relative;
-        }
-
-        &__title {
-            display: none;
-        }
-        &__img {
-            max-width: 440px;
-            height: 380px;
-            padding-left: 10px;
-        }
-    }
-
-    // section pricing
-
-    .pricing {
-        max-width: 320px;
-        margin: 0 auto;
-        padding: 2px 0 4px 0;
-
-        &__title {
-            font-size: 28px;
-            line-height: 42px;
-        }
-
-        &__offer {
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0 auto;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-}
